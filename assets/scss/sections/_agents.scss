@@ -1,0 +1,400 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Agents Section
+--------------------------------------------------------------*/
+.agents {
+  .featured-agent {
+    .agent-image {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+      }
+
+      .agent-badge {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 8px 16px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        img {
+          height: 400px;
+        }
+      }
+    }
+  }
+
+  .featured-content {
+    padding-left: 40px;
+
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+      color: var(--heading-color);
+    }
+
+    .position {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .specialties {
+      margin-bottom: 25px;
+
+      .badge {
+        background: color-mix(in srgb, var(--accent-color), transparent 90%);
+        color: var(--accent-color);
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        display: inline-block;
+        border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 25px 0;
+      padding: 0;
+      border: none;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+    }
+
+    .stats {
+      display: flex;
+      gap: 30px;
+      margin: 30px 0;
+
+      .stat-item {
+        text-align: center;
+
+        .number {
+          display: block;
+          font-size: 2rem;
+          font-weight: 700;
+          color: var(--accent-color);
+        }
+
+        .label {
+          font-size: 14px;
+          color: color-mix(in srgb, var(--default-color), transparent 40%);
+        }
+      }
+    }
+
+    .contact-info {
+      margin: 30px 0;
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+
+        i {
+          color: var(--accent-color);
+          margin-right: 12px;
+          font-size: 16px;
+        }
+
+        span {
+          color: var(--default-color);
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+
+      .social-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--surface-color);
+        border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--default-color);
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: var(--accent-color);
+          color: var(--contrast-color);
+          border-color: var(--accent-color);
+          transform: translateY(-2px);
+        }
+      }
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+
+      .btn {
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &.btn-primary {
+          background: var(--accent-color);
+          color: var(--contrast-color);
+          border: 2px solid var(--accent-color);
+
+          &:hover {
+            background: color-mix(in srgb, var(--accent-color), transparent 20%);
+            transform: translateY(-2px);
+          }
+        }
+
+        &.btn-outline {
+          background: transparent;
+          color: var(--accent-color);
+          border: 2px solid var(--accent-color);
+
+          &:hover {
+            background: var(--accent-color);
+            color: var(--contrast-color);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      padding-left: 0;
+      margin-top: 40px;
+
+      .stats {
+        justify-content: center;
+      }
+
+      .cta-buttons {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .stats {
+        gap: 15px;
+
+        .stat-item .number {
+          font-size: 1.5rem;
+        }
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+          width: 250px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .section-subtitle {
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .section-description {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .agent-card {
+    background: var(--surface-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .agent-photo {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .agent-status {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 600;
+
+        &.verified {
+          background: #28a745;
+          color: white;
+        }
+
+        &.new {
+          background: #fd7e14;
+          color: white;
+        }
+      }
+
+      .hover-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .contact-actions {
+          display: flex;
+          gap: 15px;
+
+          .action-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--contrast-color);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background: var(--accent-color);
+              color: var(--contrast-color);
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+
+    &:hover .agent-photo {
+      img {
+        transform: scale(1.05);
+      }
+
+      .hover-overlay {
+        opacity: 1;
+      }
+    }
+
+    .agent-info {
+      padding: 25px;
+      text-align: center;
+
+      h5 {
+        color: var(--heading-color);
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+
+      .role {
+        color: var(--accent-color);
+        font-size: 14px;
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        color: color-mix(in srgb, var(--default-color), transparent 30%);
+        font-size: 14px;
+
+        i {
+          margin-right: 5px;
+          color: var(--accent-color);
+        }
+      }
+
+      .languages {
+        margin-bottom: 20px;
+
+        .lang-tag {
+          display: inline-block;
+          background: color-mix(in srgb, var(--accent-color), transparent 90%);
+          color: var(--accent-color);
+          padding: 4px 8px;
+          border-radius: 10px;
+          font-size: 12px;
+          margin-right: 5px;
+        }
+      }
+
+      .view-listings {
+        display: inline-block;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 8px 20px;
+        border: 2px solid var(--accent-color);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: var(--accent-color);
+          color: var(--contrast-color);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .agent-card .agent-info h5 {
+      font-size: 1.1rem;
+    }
+  }
+}

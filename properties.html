@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Properti - InfoPropertiLamongan Indonesia</title>
+  <meta name="description"
+    content="InfoPropertiLamongan - Platform properti terpercaya di Indonesia. Temukan rumah, apartemen, dan properti komersial impian Anda.">
+  <meta name="keywords" content="properti, rumah dijual, apartemen, tanah, investasi properti, agen properti Indonesia">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="properties-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">InfoPropertiLamongan</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="properties.html" class="active">Properti</a></li>
+          <li><a href="services.html">Layanan</a></li>
+          <li><a href="agents.html">Agen</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Halaman Lainnya</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="property-details.html">Detail Properti</a></li>
+              <li><a href="service-details.html">Detail Layanan</a></li>
+              <li><a href="agent-profile.html">Profil Agen</a></li>
+              <li><a href="blog-details.html">Detail Blog</a></li>
+              <li><a href="terms.html">Syarat &amp; Ketentuan</a></li>
+              <li><a href="privacy.html">Privasi</a></li>
+            </ul>
+          </li>
+
+          <a href="contact.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="properties.html">Mulai</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">Properti</h1>
+              <p class="mb-0">
+                Temukan properti impian Anda dari koleksi pilihan terbaik kami. Gunakan filter untuk mempersempit
+                pencarian sesuai kebutuhan Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">Properti</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <section id="properties" class="properties section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+
+          <div class="col-lg-8">
+
+            <div class="properties-header mb-4">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <div>
+                  <span id="results-count" class="text-muted">Menampilkan 11 properti</span>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <div class="view-toggle d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm view-btn active" data-view="grid">
+                      <i class="bi bi-grid-3x3-gap"></i> Grid
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm view-btn" data-view="list">
+                      <i class="bi bi-list"></i> Daftar
+                    </button>
+                  </div>
+                  <div class="sort-dropdown">
+                    <select class="form-select form-select-sm" id="sort-select">
+                      <option value="newest">Urutkan: Terbaru</option>
+                      <option value="price-asc">Harga: Rendah ke Tinggi</option>
+                      <option value="price-desc">Harga: Tinggi ke Rendah</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grid View -->
+            <div class="properties-grid view-grid active" id="grid-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="row g-4" id="properties-grid">
+                <!-- Filled by JavaScript -->
+              </div>
+            </div>
+
+            <!-- List View -->
+            <div class="properties-list view-list" id="list-container" data-aos="fade-up" data-aos-delay="200">
+              <!-- Filled by JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-4" id="load-more-wrapper">
+              <button class="btn-load-more" id="btn-load-more" onclick="loadMoreProperties()">
+                <i class="bi bi-plus-circle"></i>
+                <span>Muat Lebih Banyak</span>
+              </button>
+            </div>
+
+            <!-- No Results -->
+            <div id="no-results" class="text-center py-5" style="display:none;">
+              <i class="bi bi-search" style="font-size: 3rem; color: var(--accent-color);"></i>
+              <h4 class="mt-3">Tidak ada properti ditemukan</h4>
+              <p class="text-muted">Coba ubah filter pencarian Anda</p>
+              <button class="btn btn-primary" onclick="resetFilters()">Reset Filter</button>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="properties-sidebar">
+
+              <div class="filter-widget">
+                <h5 class="filter-title">Filter Properti</h5>
+
+                <div class="filter-section">
+                  <label class="form-label">Tipe Properti</label>
+                  <select class="form-select" id="filter-type">
+                    <option value="">Semua Tipe</option>
+                    <option value="rumah">Rumah</option>
+                    <option value="apartemen">Apartemen</option>
+                    <option value="townhouse">Townhouse</option>
+                  </select>
+                </div>
+
+                <div class="filter-section">
+                  <label class="form-label">Status</label>
+                  <select class="form-select" id="filter-status">
+                    <option value="">Semua Status</option>
+                    <option value="dijual">Dijual</option>
+                    <option value="disewakan">Disewakan</option>
+                  </select>
+                </div>
+
+                <div class="filter-section">
+                  <label class="form-label">Rentang Harga</label>
+                  <div class="row g-2">
+                    <div class="col-6">
+                      <select class="form-select form-select-sm" id="filter-price-min">
+                        <option value="">Harga Min</option>
+                        <option value="1000000000">Rp 1 Miliar</option>
+                        <option value="5000000000">Rp 5 Miliar</option>
+                        <option value="10000000000">Rp 10 Miliar</option>
+                        <option value="15000000000">Rp 15 Miliar</option>
+                        <option value="20000000000">Rp 20 Miliar</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <select class="form-select form-select-sm" id="filter-price-max">
+                        <option value="">Harga Maks</option>
+                        <option value="5000000000">Rp 5 Miliar</option>
+                        <option value="10000000000">Rp 10 Miliar</option>
+                        <option value="15000000000">Rp 15 Miliar</option>
+                        <option value="20000000000">Rp 20 Miliar</option>
+                        <option value="100000000000">Rp 50+ Miliar</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-section">
+                  <label class="form-label">Kamar Tidur</label>
+                  <div class="bedroom-filter">
+                    <button class="btn btn-outline-secondary btn-sm filter-btn active" data-filter="bed"
+                      data-value="">Bebas</button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bed"
+                      data-value="1">1+</button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bed"
+                      data-value="2">2+</button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bed"
+                      data-value="3">3+</button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bed"
+                      data-value="4">4+</button>
+                  </div>
+                </div>
+
+                <div class="filter-section">
+                  <label class="form-label">Kamar Mandi</label>
+                  <div class="bathroom-filter">
+                    <button class="btn btn-outline-secondary btn-sm filter-btn active" data-filter="bath"
+                      data-value="">Bebas</button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bath"
+                      data-value="1">1+</button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bath"
+                      data-value="2">2+</button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bath"
+                      data-value="3">3+</button>
+                  </div>
+                </div>
+
+                <div class="filter-section">
+                  <label class="form-label">Lokasi</label>
+                  <select class="form-select" id="filter-location">
+                    <option value="">Semua Lokasi</option>
+                    <option value="Lamongan">Lamongan</option>
+                    <option value="Gresik">Gresik</option>
+                    <option value="Tuban">Tuban</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-primary w-100" onclick="applyFilters()">Terapkan Filter</button>
+                <button class="btn btn-outline-secondary w-100 mt-2" onclick="resetFilters()">Reset Filter</button>
+
+              </div>
+
+              <div class="featured-properties mt-4" id="sidebar-featured">
+                <h5>Properti Unggulan</h5>
+                <!-- Filled by JS - 5 items -->
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">InfoPropertiLamongan</span>
+            </a>
+            <p class="mb-4">InfoPropertiLamongan adalah platform properti terpercaya di Indonesia yang menghubungkan penjual,
+              pembeli, dan penyewa properti dengan agen-agen profesional berpengalaman.</p>
+
+                        <div class="newsletter-form">
+              <h5>Tetap Terkini</h5>
+              <form id="footerWaForm">
+                <div class="input-group">
+                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="">
+                  <button type="submit" class="btn-subscribe">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Perusahaan</h4>
+            <ul>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> Tentang Kami</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> Karier</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> Pers</a></li>
+              <li><a href="blog.html"><i class="bi bi-chevron-right"></i> Blog</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Layanan Kami</h4>
+            <ul>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Jual Beli Properti</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Sewa Properti</a></li>
+              <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Konsultasi Investasi</a></li>
+              <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Penilaian Properti</a></li>
+              <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Manajemen Properti</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <div class="contact-info">
+                <p>Jl. Lamongan Raya No. 86<br>Lamongan, Jawa Timur 62211<br>Indonesia</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+              <div class="contact-info">
+                <p>+62 322 321-888</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div class="contact-info">
+                <p>kontak@InfoPropertiLamongan.co.id</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener"><i
+                  class="bi bi-twitter-x"></i></a>
+              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener"><i
+                  class="bi bi-linkedin"></i></a>
+              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener"><i
+                  class="bi bi-youtube"></i></a>
+              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>&copy; <span>Hak Cipta</span> <strong class="px-1 sitename">InfoPropertiLamongan</strong> <span>Seluruh Hak
+                  Cipta Dilindungi Undang-Undang</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="privacy.html">Kebijakan Privasi</a>
+              <a href="terms.html">Ketentuan Layanan</a>
+              <a href="privacy.html#cookies">Kebijakan Cookie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+
+  <script src="assets/js/properties-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // ========== FILTER & RENDER SYSTEM ==========
+    let currentFilters = { type: '', status: '', priceMin: '', priceMax: '', bedrooms: '', bathrooms: '', location: '' };
+    let currentSort = 'newest';
+
+    function getFilteredProperties() {
+      let filtered = [...PROPERTIES_DATA];
+      if (currentFilters.type) filtered = filtered.filter(p => p.type === currentFilters.type);
+      if (currentFilters.status) filtered = filtered.filter(p => p.status === currentFilters.status);
+      if (currentFilters.priceMin) filtered = filtered.filter(p => p.priceNum >= parseInt(currentFilters.priceMin));
+      if (currentFilters.priceMax) filtered = filtered.filter(p => p.priceNum <= parseInt(currentFilters.priceMax));
+      if (currentFilters.bedrooms) filtered = filtered.filter(p => p.bedrooms >= parseInt(currentFilters.bedrooms));
+      if (currentFilters.bathrooms) filtered = filtered.filter(p => p.bathrooms >= parseInt(currentFilters.bathrooms));
+      if (currentFilters.location) filtered = filtered.filter(p => p.location.includes(currentFilters.location));
+
+      // Sort
+      if (currentSort === 'price-asc') filtered.sort((a, b) => a.priceNum - b.priceNum);
+      else if (currentSort === 'price-desc') filtered.sort((a, b) => b.priceNum - a.priceNum);
+      else filtered.sort((a, b) => b.id - a.id);
+
+      return filtered;
+    }
+
+    function renderGridCard(p) {
+      const statusBadge = p.status === 'disewakan' ? '<span class="badge for-rent">Disewakan</span>' : '<span class="badge for-sale">Dijual</span>';
+      const priceDisplay = p.priceUnit ? `${p.price}<span>${p.priceUnit}</span>` : p.price;
+      return `
+        <div class="col-lg-6 col-md-6 property-item" data-type="${p.type}" data-status="${p.status}" data-bedrooms="${p.bedrooms}" data-bathrooms="${p.bathrooms}">
+          <div class="property-card">
+            <div class="property-image">
+              <img src="${p.mainImage}" alt="${p.title}" class="img-fluid">
+              <div class="property-badges">
+                <span class="badge ${p.badgeClass}">${p.badge}</span>
+                ${statusBadge}
+              </div>
+              <div class="property-overlay">
+                <button class="favorite-btn"><i class="bi bi-heart"></i></button>
+                <button class="gallery-btn" data-count="${p.gallery.length}"><i class="bi bi-images"></i></button>
+              </div>
+            </div>
+            <div class="property-content">
+              <div class="property-price">${priceDisplay}</div>
+              <h4 class="property-title">${p.title}</h4>
+              <p class="property-location"><i class="bi bi-geo-alt"></i> ${p.address}</p>
+              <div class="property-features">
+                <span><i class="bi bi-house"></i> ${p.bedrooms} KT</span>
+                <span><i class="bi bi-water"></i> ${p.bathrooms} KM</span>
+                <span><i class="bi bi-arrows-angle-expand"></i> ${p.area} m²</span>
+              </div>
+              <div class="property-agent">
+                <img src="${p.agent.image}" alt="Agen" class="agent-avatar">
+                <div class="agent-info">
+                  <strong>${p.agent.name}</strong>
+                  <div class="agent-contact"><small><i class="bi bi-telephone"></i> ${p.agent.phone}</small></div>
+                </div>
+              </div>
+              <a href="property-details.html?id=${p.id}" class="btn btn-primary w-100">Lihat Detail</a>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function renderListCard(p) {
+      const priceDisplay = p.priceUnit ? `${p.price}<span>${p.priceUnit}</span>` : p.price;
+      return `
+        <div class="property-list-item" data-type="${p.type}" data-status="${p.status}">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="property-image">
+                <img src="${p.mainImage}" alt="${p.title}" class="img-fluid">
+                <div class="property-badges">
+                  <span class="badge ${p.badgeClass}">${p.badge}</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="property-content">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h4 class="property-title mb-1">${p.title}</h4>
+                    <p class="property-location mb-2"><i class="bi bi-geo-alt"></i> ${p.address}</p>
+                  </div>
+                  <div class="property-price">${priceDisplay}</div>
+                </div>
+                <div class="property-features mb-3">
+                  <span><i class="bi bi-house"></i> ${p.bedrooms} KT</span>
+                  <span><i class="bi bi-water"></i> ${p.bathrooms} KM</span>
+                  <span><i class="bi bi-arrows-angle-expand"></i> ${p.area} m²</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="property-agent">
+                    <img src="${p.agent.image}" alt="Agen" class="agent-avatar">
+                    <span>${p.agent.name}</span>
+                  </div>
+                  <div class="property-actions">
+                    <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+                    <a href="property-details.html?id=${p.id}" class="btn btn-primary btn-sm">Lihat Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function renderSidebarFeatured() {
+      const featured = PROPERTIES_DATA.filter(p => ['featured', 'exclusive', 'hot'].includes(p.badgeClass)).slice(0, 5);
+      const container = document.getElementById('sidebar-featured');
+      let html = '<h5>Properti Unggulan</h5>';
+      featured.forEach(p => {
+        const priceDisplay = p.priceUnit ? `${p.price}${p.priceUnit}` : p.price;
+        html += `
+          <div class="featured-item">
+            <a href="property-details.html?id=${p.id}" style="text-decoration:none;color:inherit;">
+              <div class="row g-3 align-items-center">
+                <div class="col-5">
+                  <img src="${p.mainImage}" alt="${p.title}" class="img-fluid rounded">
+                </div>
+                <div class="col-7">
+                  <h6 class="mb-1">${p.title}</h6>
+                  <p class="text-muted small mb-1">${p.location}</p>
+                  <strong class="text-primary">${priceDisplay}</strong>
+                </div>
+              </div>
+            </a>
+          </div>`;
+      });
+      container.innerHTML = html;
+    }
+
+    const ITEMS_PER_PAGE = 4;
+    let visibleCount = ITEMS_PER_PAGE;
+
+    function renderProperties() {
+      const filtered = getFilteredProperties();
+      const gridContainer = document.getElementById('properties-grid');
+      const listContainer = document.getElementById('list-container');
+      const noResults = document.getElementById('no-results');
+      const resultsCount = document.getElementById('results-count');
+      const loadMoreWrapper = document.getElementById('load-more-wrapper');
+
+      if (filtered.length === 0) {
+        gridContainer.innerHTML = '';
+        listContainer.innerHTML = '';
+        noResults.style.display = 'block';
+        loadMoreWrapper.style.display = 'none';
+        resultsCount.textContent = 'Tidak ada properti ditemukan';
+        return;
+      }
+
+      noResults.style.display = 'none';
+
+      // Render all cards
+      gridContainer.innerHTML = filtered.map(renderGridCard).join('');
+      listContainer.innerHTML = filtered.map(renderListCard).join('');
+
+      // Apply visibility limit
+      applyVisibility(filtered.length);
+    }
+
+    function applyVisibility(totalCount) {
+      const gridItems = document.querySelectorAll('#properties-grid .property-item');
+      const listItems = document.querySelectorAll('#list-container .property-list-item');
+      const loadMoreWrapper = document.getElementById('load-more-wrapper');
+      const resultsCount = document.getElementById('results-count');
+      const showing = Math.min(visibleCount, totalCount);
+
+      gridItems.forEach((item, i) => {
+        item.style.display = i < visibleCount ? '' : 'none';
+      });
+      listItems.forEach((item, i) => {
+        item.style.display = i < visibleCount ? '' : 'none';
+      });
+
+      resultsCount.textContent = `Menampilkan ${showing} dari ${totalCount} properti`;
+
+      // Show/hide load more button
+      if (visibleCount >= totalCount) {
+        loadMoreWrapper.style.display = 'none';
+      } else {
+        loadMoreWrapper.style.display = '';
+      }
+    }
+
+    function loadMoreProperties() {
+      visibleCount += ITEMS_PER_PAGE;
+      const filtered = getFilteredProperties();
+      applyVisibility(filtered.length);
+    }
+
+    function applyFilters() {
+      currentFilters.type = document.getElementById('filter-type').value;
+      currentFilters.status = document.getElementById('filter-status').value;
+      currentFilters.priceMin = document.getElementById('filter-price-min').value;
+      currentFilters.priceMax = document.getElementById('filter-price-max').value;
+      currentFilters.location = document.getElementById('filter-location').value;
+      visibleCount = ITEMS_PER_PAGE;
+      renderProperties();
+    }
+
+    function resetFilters() {
+      currentFilters = { type: '', status: '', priceMin: '', priceMax: '', bedrooms: '', bathrooms: '', location: '' };
+      document.getElementById('filter-type').value = '';
+      document.getElementById('filter-status').value = '';
+      document.getElementById('filter-price-min').value = '';
+      document.getElementById('filter-price-max').value = '';
+      document.getElementById('filter-location').value = '';
+      // Reset bedroom/bathroom buttons
+      document.querySelectorAll('.bedroom-filter .filter-btn, .bathroom-filter .filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.value === '') btn.classList.add('active');
+      });
+      visibleCount = ITEMS_PER_PAGE;
+      renderProperties();
+    }
+
+    // Event Listeners
+    document.addEventListener('DOMContentLoaded', function () {
+      renderProperties();
+      renderSidebarFeatured();
+
+      // Sort
+      document.getElementById('sort-select').addEventListener('change', function () {
+        currentSort = this.value;
+        visibleCount = ITEMS_PER_PAGE;
+        renderProperties();
+      });
+
+      // View toggle
+      document.querySelectorAll('.view-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const view = this.dataset.view;
+          document.querySelector('.view-grid').classList.toggle('active', view === 'grid');
+          document.querySelector('.view-list').classList.toggle('active', view === 'list');
+        });
+      });
+
+      // Bedroom/Bathroom filter buttons - only update visual state, don't auto-filter
+      document.querySelectorAll('.bedroom-filter .filter-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.bedroom-filter .filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentFilters.bedrooms = this.dataset.value;
+        });
+      });
+
+      document.querySelectorAll('.bathroom-filter .filter-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.bathroom-filter .filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentFilters.bathrooms = this.dataset.value;
+        });
+      });
+
+      // NO auto-apply on select change - filter only runs when "Terapkan Filter" button is clicked
+    });
+  </script>
+
+</body>
+
+</html>
+

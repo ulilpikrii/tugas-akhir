@@ -1,0 +1,1323 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Beranda - InfoPropertiLamongan Indonesia</title>
+  <meta name="description"
+    content="InfoPropertiLamongan - Platform properti terpercaya di Indonesia. Temukan rumah, apartemen, dan properti komersial impian Anda.">
+  <meta name="keywords" content="properti, rumah dijual, apartemen, tanah, investasi properti, agen properti Indonesia">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">InfoPropertiLamongan</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="properties.html">Properti</a></li>
+          <li><a href="services.html">Layanan</a></li>
+          <li><a href="agents.html">Agen</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Halaman Lainnya</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="property-details.html">Detail Properti</a></li>
+              <li><a href="service-details.html">Detail Layanan</a></li>
+              <li><a href="agent-profile.html">Profil Agen</a></li>
+              <li><a href="blog-details.html">Detail Blog</a></li>
+              <li><a href="terms.html">Syarat & Ketentuan</a></li>
+              <li><a href="privacy.html">Privasi</a></li>
+            </ul>
+          </li>
+
+          <a href="contact.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener">Mulai</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="hero-content">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6 hero-text" data-aos="fade-right" data-aos-delay="200">
+              <div class="hero-badge">
+                <i class="bi bi-star-fill"></i>
+                <span>Properti Premium</span>
+              </div>
+              <h1>Temukan Rumah Sempurna Anda di Lamongan, Gresik & Tuban</h1>
+              <p>Temukan hunian impian Anda bersama InfoPropertiLamongan. Kami menyediakan pilihan properti terverifikasi
+                dari agen-agen terpercaya di wilayah Lamongan, Gresik, dan Tuban.</p>
+
+              <div class="search-form" data-aos="fade-up" data-aos-delay="300">
+                <form action="properties.html" method="get">
+                  <div class="row g-3">
+                    <div class="col-12">
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="property-type" name="property_type" required="">
+                          <option value="">Pilih Tipe</option>
+                          <option value="house">Rumah</option>
+                          <option value="apartment">Apartemen</option>
+                          <option value="townhouse">Townhouse</option>
+                        </select>
+                        <label for="property-type">Tipe Properti</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="price-range" name="price_range" required="">
+                          <option value="">Rentang Harga</option>
+                          <option value="0-200000">Di Bawah Rp 3 Miliar</option>
+                          <option value="200000-500000">Rp 3 - 7 Miliar</option>
+                          <option value="500000-800000">Rp 7 - 12 Miliar</option>
+                          <option value="800000-1200000">Rp 12 - 18 Miliar</option>
+                          <option value="1200000+">Di Atas Rp 18 Miliar</option>
+                        </select>
+                        <label for="price-range">Rentang Harga</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="bedrooms" name="bedrooms">
+                          <option value="">Kamar Tidur</option>
+                          <option value="1">1 Kamar Tidur</option>
+                          <option value="2">2 Kamar Tidur</option>
+                          <option value="3">3 Kamar Tidur</option>
+                          <option value="4">4 Kamar Tidur</option>
+                          <option value="5+">5+ Kamar Tidur</option>
+                        </select>
+                        <label for="bedrooms">Kamar Tidur</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="bathrooms" name="bathrooms">
+                          <option value="">Kamar Mandi</option>
+                          <option value="1">1 Kamar Mandi</option>
+                          <option value="2">2 Kamar Mandi</option>
+                          <option value="3">3 Kamar Mandi</option>
+                          <option value="4+">4+ Kamar Mandi</option>
+                        </select>
+                        <label for="bathrooms">Kamar Mandi</label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-search w-100">
+                        <i class="bi bi-search"></i>
+                        Cari Properti
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <h3><span data-purecounter-start="0" data-purecounter-end="2847" data-purecounter-duration="1"
+                          class="purecounter"></span>+</h3>
+                      <p>Properti Terdaftar</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <h3><span data-purecounter-start="0" data-purecounter-end="156" data-purecounter-duration="1"
+                          class="purecounter"></span>+</h3>
+                      <p>Agen Terverifikasi</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <h3><span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="1"
+                          class="purecounter"></span>%</h3>
+                      <p>Kepuasan Klien</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 hero-images" data-aos="fade-left" data-aos-delay="400">
+              <div class="image-stack">
+                <div class="main-image">
+                  <img src="assets/img/real-estate/rumah3.webp" alt="Properti Mewah" class="img-fluid">
+                  <div class="property-tag">
+                    <span class="price">Rp 3,5 Miliar</span>
+                    <span class="type">Unggulan</span>
+                  </div>
+                </div>
+
+                <div class="secondary-image">
+                  <img src="assets/img/real-estate/town6.webp" alt="Interior Properti" class="img-fluid">
+                </div>
+
+                <div class="floating-card">
+                  <div class="agent-info">
+                    <img src="assets/img/real-estate/agent-4.webp" alt="Agen" class="agent-avatar">
+                    <div class="agent-details">
+                      <h5>Dimas Prasetyo</h5>
+                      <p>Agen Properti Terbaik</p>
+                      <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span>4.9 (127 ulasan)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="home-about" class="home-about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-section">
+              <div class="main-image-wrapper">
+                <img src="assets/img/real-estate/town1.webp" alt="Properti Premium" class="img-fluid main-image">
+                <div class="floating-card">
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="bi bi-award"></i>
+                    </div>
+                    <div class="text">
+                      <span class="number"><span data-purecounter-start="0" data-purecounter-end="12"
+                          data-purecounter-duration="1" class="purecounter"></span>+</span>
+                      <span class="label">Penghargaan Diraih</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="secondary-images">
+                <div class="small-image">
+                  <img src="assets/img/real-estate/town7.webp" alt="Desain Interior" class="img-fluid">
+                </div>
+                <div class="small-image">
+                  <img src="assets/img/real-estate/agent-3.webp" alt="Agen Ahli" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="300">
+            <div class="content-wrapper">
+              <div class="section-badge">
+                <i class="bi bi-buildings"></i>
+                <span>Properti Premium</span>
+              </div>
+
+              <h2>Mengubah Impian Properti Menjadi Kenyataan</h2>
+
+              <p>Dengan pengalaman lebih dari 14 tahun di industri properti Indonesia, InfoPropertiLamongan telah membantu ribuan
+                keluarga menemukan hunian impian mereka. Kami menggabungkan keahlian lokal dengan standar layanan
+                internasional.</p>
+
+              <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="2800" data-purecounter-duration="2"
+                      class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Properti Terdaftar</div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1"
+                      class="purecounter"></span>%
+                  </div>
+                  <div class="stat-label">Tingkat Kesuksesan</div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
+                      class="purecounter"></span>/7
+                  </div>
+                  <div class="stat-label">Dukungan Klien</div>
+                </div>
+              </div>
+
+              <div class="features-list">
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Analisis pasar dan strategi penetapan harga yang ahli</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Layanan pencocokan properti yang dipersonalisasi</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Fotografi profesional dan tur virtual</span>
+                </div>
+              </div>
+
+              <div class="cta-wrapper">
+                <a href="about.html" class="btn-primary">
+                  <span>Pelajari Lebih Lanjut Tentang Kami</span>
+                  <i class="bi bi-arrow-right-circle"></i>
+                </a>
+                <div class="contact-quick">
+                  <i class="bi bi-headset"></i>
+                  <div class="contact-text">
+                    <span>Butuh bantuan?</span>
+                    <a href="tel:+62322321888">+62 322 321-888</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="featured-properties" class="featured-properties section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Properti Unggulan</h2>
+        <p>Temukan properti terbaik dengan layanan profesional yang telah dipercaya ribuan klien di seluruh Indonesia
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="grid-featured" data-aos="zoom-in" data-aos-delay="150">
+
+          <article class="highlight-card">
+            <div class="media">
+              <div class="badge-set">
+                <span class="flag featured">Unggulan</span>
+                <span class="flag premium">Premium</span>
+              </div>
+              <a href="property-details.html?id=1" class="image-link">
+                <img src="assets/img/real-estate/rumah6.webp" alt="Vila Pameran" class="img-fluid">
+              </a>
+              <div class="quick-specs">
+                <span><i class="bi bi-door-open"></i> 5 Kamar</span>
+                <span><i class="bi bi-droplet"></i> 4 Kamar Mandi</span>
+                <span><i class="bi bi-aspect-ratio"></i> 455 mÃ‚Â²</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="top">
+                <div>
+                  <h3><a href="property-details.html?id=1">Vila Tepi Laut dengan Kolam Renang Tanpa Tepi</a></h3>
+                  <div class="loc"><i class="bi bi-geo-alt-fill"></i> Paciran, Lamongan</div>
+                </div>
+                <div class="price">Rp 3,5 Miliar</div>
+              </div>
+              <p class="excerpt">Vila mewah dengan pemandangan laut yang memukau, dilengkapi kolam renang infinity dan
+                taman tropis yang asri.</p>
+              <div class="cta">
+                <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." class="btn-main">Atur Kunjungan</a>
+                <a href="property-details.html?id=1" class="btn-soft">Foto Lainnya</a>
+                <div class="meta">
+                  <span class="status for-sale">Dijual</span>
+                  <span class="listed">Terdaftar 2 hari yang lalu</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="mini-list">
+
+            <article class="mini-card" data-aos="fade-up" data-aos-delay="200">
+              <a href="property-details.html?id=2" class="thumb">
+                <img src="assets/img/real-estate/apart2.webp" alt="Surga Loft" class="img-fluid" loading="lazy">
+                <span class="label hot"><i class="bi bi-lightning-charge-fill"></i> Populer</span>
+              </a>
+              <div class="mini-body">
+                <h4><a href="property-details.html?id=2">Loft Perkotaan dengan Pemandangan Langit</a></h4>
+                <div class="mini-loc"><i class="bi bi-geo"></i> Kota Baru, Gresik</div>
+                <div class="mini-specs">
+                  <span><i class="bi bi-door-open"></i> 2</span>
+                  <span><i class="bi bi-droplet"></i> 2</span>
+                  <span><i class="bi bi-rulers"></i> 135 mÃ‚Â²</span>
+                </div>
+                <div class="mini-foot">
+                  <div class="mini-price">Rp 1,8 Miliar</div>
+                  <a href="property-details.html?id=2" class="mini-btn">Detail</a>
+                </div>
+              </div>
+            </article>
+            <article class="mini-card" data-aos="fade-up" data-aos-delay="250">
+              <a href="property-details.html?id=3" class="thumb">
+                <img src="assets/img/real-estate/rumah3.webp" alt="Rumah Pinggiran Kota" class="img-fluid"
+                  loading="lazy">
+                <span class="label new"><i class="bi bi-star-fill"></i> Baru</span>
+              </a>
+              <div class="mini-body">
+                <h4><a href="property-details.html?id=3">Tempat Singgah Pinggiran Kota yang Menawan</a></h4>
+                <div class="mini-loc"><i class="bi bi-geo"></i> Lamongan Kota</div>
+                <div class="mini-specs">
+                  <span><i class="bi bi-door-open"></i> 4</span>
+                  <span><i class="bi bi-droplet"></i> 3</span>
+                  <span><i class="bi bi-rulers"></i> 218 mÃ‚Â²</span>
+                </div>
+                <div class="mini-foot">
+                  <div class="mini-price">Rp 1,6 Miliar</div>
+                  <a href="property-details.html?id=3" class="mini-btn">Detail</a>
+                </div>
+              </div>
+            </article>
+            <article class="mini-card" data-aos="fade-up" data-aos-delay="300">
+              <a href="property-details.html?id=4" class="thumb">
+                <img src="assets/img/real-estate/town6.webp" alt="Penthouse" class="img-fluid" loading="lazy">
+                <span class="label featured"><i class="bi bi-gem"></i> Unggulan</span>
+              </a>
+              <div class="mini-body">
+                <h4><a href="property-details.html?id=4">Suite Penthouse Beratap Kaca</a></h4>
+                <div class="mini-loc"><i class="bi bi-geo"></i> GKB, Gresik</div>
+                <div class="mini-specs">
+                  <span><i class="bi bi-door-open"></i> 3</span>
+                  <span><i class="bi bi-droplet"></i> 3</span>
+                  <span><i class="bi bi-rulers"></i> 197 mÃ‚Â²</span>
+                </div>
+                <div class="mini-foot">
+                  <div class="mini-price">Rp 2,5 Miliar</div>
+                  <a href="property-details.html?id=4" class="mini-btn">Detail</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="300">
+          <a href="properties.html" class="btn-view-all-properties">
+            <span>Lihat Semua Properti</span>
+            <i class="bi bi-arrow-right-circle"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Layanan Unggulan</h2>
+        <p>Temukan properti terbaik dengan layanan profesional yang telah dipercaya ribuan klien di seluruh Indonesia
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-icon">
+                  <i class="bi bi-search"></i>
+                </div>
+                <div class="service-number">01</div>
+              </div>
+              <div class="service-content">
+                <h3><a href="service-details.html">Pencarian Properti</a></h3>
+                <p>Temukan properti impian Anda dengan fitur pencarian canggih dan database terlengkap di Indonesia</p>
+                <ul class="service-features">
+                  <li><i class="bi bi-check2"></i> Filter Pencarian Lanjutan</li>
+                  <li><i class="bi bi-check2"></i> Tur Virtual 360°</li>
+                  <li><i class="bi bi-check2"></i> Pembaruan Real-time</li>
+                </ul>
+              </div>
+              <div class="service-action">
+                <a href="service-details.html" class="service-btn">
+                  <span>Jelajahi Properti</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-card featured">
+              <div class="service-header">
+                <div class="service-icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <div class="service-number">02</div>
+              </div>
+              <div class="service-content">
+                <h3><a href="service-details.html">Analisis Pasar</a></h3>
+                <p>Dapatkan analisis pasar properti terkini untuk membantu Anda membuat keputusan investasi yang tepat
+                </p>
+                <ul class="service-features">
+                  <li><i class="bi bi-check2"></i> Laporan Tren Harga</li>
+                  <li><i class="bi bi-check2"></i> Wawasan Investasi</li>
+                  <li><i class="bi bi-check2"></i> Peramalan Pasar</li>
+                </ul>
+              </div>
+              <div class="service-action">
+                <a href="service-details.html" class="service-btn">
+                  <span>Dapatkan Analisis</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-icon">
+                  <i class="bi bi-key"></i>
+                </div>
+                <div class="service-number">03</div>
+              </div>
+              <div class="service-content">
+                <h3><a href="service-details.html">Manajemen Properti</a></h3>
+                <p>Layanan manajemen properti lengkap untuk memaksimalkan nilai investasi Anda secara profesional</p>
+                <ul class="service-features">
+                  <li><i class="bi bi-check2"></i> Penyaringan Penyewa</li>
+                  <li><i class="bi bi-check2"></i> Pengumpulan Sewa</li>
+                  <li><i class="bi bi-check2"></i> Layanan Pemeliharaan</li>
+                </ul>
+              </div>
+              <div class="service-action">
+                <a href="service-details.html" class="service-btn">
+                  <span>Kelola Sekarang</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div class="service-number">04</div>
+              </div>
+              <div class="service-content">
+                <h3><a href="service-details.html">Dukungan Hukum</a></h3>
+                <p>Pendampingan hukum profesional untuk memastikan setiap transaksi properti Anda aman dan sah secara
+                  hukum</p>
+                <ul class="service-features">
+                  <li><i class="bi bi-check2"></i> Tinjauan Kontrak</li>
+                  <li><i class="bi bi-check2"></i> Verifikasi Hak Milik</li>
+                  <li><i class="bi bi-check2"></i> Dokumentasi Hukum</li>
+                </ul>
+              </div>
+              <div class="service-action">
+                <a href="service-details.html" class="service-btn">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+          <a href="services.html" class="btn-all-services">
+            <span>Temukan Semua Layanan Kami</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="featured-agents" class="featured-agents section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Agen Unggulan</h2>
+        <p>Temukan properti terbaik dengan layanan profesional yang telah dipercaya ribuan klien di seluruh Indonesia
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 justify-content-center">
+
+          <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="agent-card">
+              <div class="agent-image">
+                <img src="assets/img/real-estate/agent-5.webp" alt="Agen Teratas" class="img-fluid">
+                <div class="agent-overlay">
+                  <div class="contact-buttons">
+                    <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." class="btn-contact" title="Hubungi Agen">
+                      <i class="bi bi-telephone"></i>
+                    </a>
+                    <a href="mailto:lina.permatasari@InfoPropertiLamongan.co.id" class="btn-contact" title="Email Agen">
+                      <i class="bi bi-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn-contact"
+                      title="WhatsApp">
+                      <i class="bi bi-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="status-badge top-agent">Agen Teratas</div>
+              </div>
+              <div class="agent-info">
+                <div class="agent-meta">
+                  <h3 class="agent-name">Lina Permatasari</h3>
+                  <p class="agent-title">Pakar Properti Mewah</p>
+                </div>
+                <div class="agent-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Properti Terjual</span>
+                  </div>
+                  <div class="stat-divider"></div>
+                  <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Peringkat</span>
+                  </div>
+                </div>
+                <div class="location-tag">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Lamongan</span>
+                </div>
+                <div class="specialties">
+                  <span class="specialty-tag">Tepi Air</span>
+                  <span class="specialty-tag">Gedung Bertingkat</span>
+                </div>
+                <a href="agent-profile.html?id=lina" class="profile-link">Lihat Profil Lengkap</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="agent-card">
+              <div class="agent-image">
+                <img src="assets/img/real-estate/agent-4.webp" alt="Agen Teratas" class="img-fluid">
+                <div class="agent-overlay">
+                  <div class="contact-buttons">
+                    <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." class="btn-contact" title="Hubungi Agen">
+                      <i class="bi bi-telephone"></i>
+                    </a>
+                    <a href="mailto:dimas.prasetyo@InfoPropertiLamongan.co.id" class="btn-contact" title="Email Agen">
+                      <i class="bi bi-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn-contact"
+                      title="WhatsApp">
+                      <i class="bi bi-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="status-badge certified">Tersertifikasi</div>
+              </div>
+              <div class="agent-info">
+                <div class="agent-meta">
+                  <h3 class="agent-name">Dimas Prasetyo</h3>
+                  <p class="agent-title">Spesialis Komersial</p>
+                </div>
+                <div class="agent-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">90+</span>
+                    <span class="stat-label">Penjualan Komersial</span>
+                  </div>
+                  <div class="stat-divider"></div>
+                  <div class="stat-item">
+                    <span class="stat-number">4.8</span>
+                    <span class="stat-label">Peringkat</span>
+                  </div>
+                </div>
+                <div class="location-tag">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Gresik</span>
+                </div>
+                <div class="specialties">
+                  <span class="specialty-tag">Ruang Kantor</span>
+                  <span class="specialty-tag">Ritel</span>
+                </div>
+                <a href="agent-profile.html?id=dimas" class="profile-link">Lihat Profil Lengkap</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="agent-card">
+              <div class="agent-image">
+                <img src="assets/img/real-estate/agent-8.webp" alt="Agen Teratas" class="img-fluid">
+                <div class="agent-overlay">
+                  <div class="contact-buttons">
+                    <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." class="btn-contact" title="Hubungi Agen">
+                      <i class="bi bi-telephone"></i>
+                    </a>
+                    <a href="mailto:maria.anggraeni@InfoPropertiLamongan.co.id" class="btn-contact" title="Email Agen">
+                      <i class="bi bi-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn-contact"
+                      title="WhatsApp">
+                      <i class="bi bi-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="status-badge new-star">Bintang Baru</div>
+              </div>
+              <div class="agent-info">
+                <div class="agent-meta">
+                  <h3 class="agent-name">Maria Anggraeni</h3>
+                  <p class="agent-title">Penasihat Residensial</p>
+                </div>
+                <div class="agent-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">75+</span>
+                    <span class="stat-label">Keluarga Bahagia</span>
+                  </div>
+                  <div class="stat-divider"></div>
+                  <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Peringkat</span>
+                  </div>
+                </div>
+                <div class="location-tag">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Tuban</span>
+                </div>
+                <div class="specialties">
+                  <span class="specialty-tag">Rumah Keluarga</span>
+                  <span class="specialty-tag">Pembeli Pertama</span>
+                </div>
+                <a href="agent-profile.html?id=maria" class="profile-link">Lihat Profil Lengkap</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+          <a href="agents.html" class="explore-agents-btn">
+            <span>Jelajahi Semua Agen Kami</span>
+            <i class="bi bi-arrow-right-circle"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="testimonials" class="testimonials section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimoni</h2>
+        <p>Temukan properti terbaik dengan layanan profesional yang telah dipercaya ribuan klien di seluruh Indonesia
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Pengalaman Luar Biasa Bersama InfoPropertiLamongan</h2>
+                    <p>
+                      Saya sangat puas dengan layanan InfoPropertiLamongan. Tim mereka sangat profesional dan membantu saya
+                      menemukan rumah impian di lokasi strategis dengan harga yang sangat wajar.
+                    </p>
+                    <p>
+                      Proses transaksi berjalan lancar dari awal hingga akhir. Agen yang menangani saya sangat responsif
+                      dan selalu memberikan informasi yang akurat. Sangat merekomendasikan!
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-7.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Surya Gunawan</h3>
+                        <span>Klien</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Pelayanan Profesional dan Terpercaya</h2>
+                    <p>
+                      InfoPropertiLamongan membantu saya menjual apartemen dengan harga yang sangat kompetitif. Proses pemasaran
+                      yang mereka lakukan sangat efektif dan profesional.
+                    </p>
+                    <p>
+                      Dalam waktu kurang dari 2 bulan, apartemen saya sudah terjual dengan harga yang memuaskan. Tim
+                      desain interior mereka juga memberikan saran staging yang sangat membantu meningkatkan daya tarik
+                      properti.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-8.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Joni Mahendra</h3>
+                        <span>Desainer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-8.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>
+                      Proses Mudah dan Transparan
+                    </h2>
+                    <p>
+                      Sebagai pembeli pertama kali, saya sangat terbantu dengan bimbingan tim InfoPropertiLamongan. Mereka
+                      menjelaskan setiap tahapan dengan detail dan memastikan saya memahami semua aspek hukum.
+                    </p>
+                    <p>
+                      Dokumen-dokumen yang diperlukan diproses dengan cepat dan efisien. Saya merasa aman karena semua
+                      aspek legalitas ditangani oleh tim profesional mereka.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-9.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Maulana Firdaus</h3>
+                        <span>Pekerja Lepas</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-9.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Investasi Properti yang Menguntungkan</h2>
+                    <p>
+                      Berkat rekomendasi tim investasi InfoPropertiLamongan, saya berhasil mendapatkan properti komersial dengan
+                      tingkat pengembalian investasi yang sangat baik.
+                    </p>
+                    <p>
+                      Analisis pasar yang mereka berikan sangat akurat dan membantu saya membuat keputusan investasi
+                      yang tepat. ROI properti saya sudah meningkat 25% dalam 2 tahun. Terima kasih InfoPropertiLamongan!
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-10.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Jeni Kusuma</h3>
+                        <span>Pemilik Toko</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-10.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="why-us" class="why-us section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mengapa Kami</h2>
+        <p>Temukan properti terbaik dengan layanan profesional yang telah dipercaya ribuan klien di seluruh Indonesia
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="image-showcase">
+              <div class="main-image-wrapper">
+                <img src="assets/img/real-estate/rumah3.webp" alt="Properti Premium" class="img-fluid main-image">
+                <div class="image-overlay">
+                  <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox">
+                    <div class="overlay-content">
+                      <i class="bi bi-play-circle-fill play-icon"></i>
+                      <span>Tonton Cerita Kami</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="floating-stats">
+                <div class="stat-badge">
+                  <span class="stat-number">15+</span>
+                  <span class="stat-text">Tahun Keunggulan</span>
+                </div>
+                <div class="stat-badge">
+                  <span class="stat-number">3.2K</span>
+                  <span class="stat-text">Klien Bahagia</span>
+                </div>
+              </div>
+
+              <div class="experience-card">
+                <div class="card-icon">
+                  <i class="bi bi-gem"></i>
+                </div>
+                <div class="card-content">
+                  <h5>Layanan Utama</h5>
+                  <p>Keahlian properti mewah sejak 2010</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="content-wrapper">
+              <div class="section-badge">
+                <i class="bi bi-star-fill me-2"></i>
+                Mengapa Properti Elit
+              </div>
+
+              <h2>Gerbang Anda Menuju Pengalaman Properti yang Luar Biasa</h2>
+              <p class="lead-text">Kami menyediakan layanan properti terlengkap dengan tim profesional yang
+                berpengalaman. Setiap transaksi ditangani dengan cermat untuk memastikan kepuasan pelanggan.</p>
+
+              <div class="benefits-grid">
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="benefit-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Lokasi Strategis</h4>
+                    <p>Akses eksklusif ke lingkungan yang paling dicari dan pasar berkembang.</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="450">
+                  <div class="benefit-icon">
+                    <i class="bi bi-shield-fill-check"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Hasil Terjamin</h4>
+                    <p>Rekam jejak kami yang terbukti memastikan transaksi yang sukses dan klien yang puas.</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="benefit-icon">
+                    <i class="bi bi-clock-fill"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Pemrosesan Cepat</h4>
+                    <p>Proses yang disederhanakan dan negosiasi ahli untuk menutup kesepakatan secara efisien.</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="550">
+                  <div class="benefit-icon">
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Tim Ahli</h4>
+                    <p>Profesional bersertifikat dengan pengetahuan pasar yang mendalam dan dedikasi kepada klien.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="achievement-highlights" data-aos="fade-up" data-aos-delay="600">
+                <div class="highlight-item">
+                  <span class="highlight-number purecounter" data-purecounter-start="0" data-purecounter-end="94"
+                    data-purecounter-duration="2"></span>%
+                  <span class="highlight-label">Tingkat Kesuksesan</span>
+                </div>
+                <div class="highlight-divider"></div>
+                <div class="highlight-item">
+                  <span class="highlight-number purecounter" data-purecounter-start="0" data-purecounter-end="1800"
+                    data-purecounter-duration="2"></span>+
+                  <span class="highlight-label">Properti Terjual</span>
+                </div>
+                <div class="highlight-divider"></div>
+                <div class="highlight-item">
+                  <span class="highlight-number purecounter" data-purecounter-start="0" data-purecounter-end="24"
+                    data-purecounter-duration="2"></span>/7
+                  <span class="highlight-label">Dukungan Tersedia</span>
+                </div>
+              </div>
+
+              <div class="action-buttons" data-aos="fade-up" data-aos-delay="650">
+                <a href="properties.html" class="btn btn-primary">Jelajahi Properti</a>
+                <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20ingin%20menjadwalkan%20konsultasi%20properti." target="_blank" rel="noopener" class="btn btn-outline">Jadwalkan Konsultasi</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="recent-blog-posts" class="recent-blog-posts section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Postingan Blog Terbaru</h2>
+        <p>Temukan properti terbaik dengan layanan profesional yang telah dipercaya ribuan klien di seluruh Indonesia
+        </p>
+      </div>
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/beli-rumah.webp" class="img-fluid" alt="Cara Cerdas Membeli Rumah Pertama Anda">
+                <span class="post-date">01 Januari</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Cara Cerdas Membeli Rumah Pertama Anda</h3>
+                <a href="blog-details.html?id=1" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/apartemen-rumah.webp" class="img-fluid" alt="Perbandingan Apartemen vs Rumah Tapak untuk Investasi">
+                <span class="post-date">05 Juni</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Perbandingan Apartemen vs Rumah Tapak untuk Investasi</h3>
+                <a href="blog-details.html?id=2" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/nilai-properti.webp" class="img-fluid" alt="Rahasia Menaikkan Nilai Jual Properti Anda hingga 30%">
+                <span class="post-date">22 Juni</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Rahasia Menaikkan Nilai Jual Properti Anda hingga 30%</h3>
+                <a href="blog-details.html?id=3" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section class="call-to-action-2 call-to-action section light-background" id="call-to-action">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+
+            <div class="cta-content">
+              <div class="section-badge">Perjalanan Properti Anda Dimulai di Sini</div>
+              <h2>Siap Menemukan Investasi Sempurna Anda?</h2>
+              <p>Jangan lewatkan kesempatan untuk memiliki properti impian Anda. Tim ahli kami siap membantu dari proses
+                pencarian hingga transaksi selesai dengan layanan yang profesional dan terpercaya.</p>
+
+              <div class="benefits-list">
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Analisis dan wawasan pasar ahli</span>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="350">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Rekomendasi properti yang dipersonalisasi</span>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Dukungan transaksi dari awal hingga akhir</span>
+                </div>
+              </div>
+
+              <div class="cta-actions">
+                <a href="contact.html" class="btn btn-primary">
+                  <i class="bi bi-person-lines-fill"></i>
+                  Dapatkan Konsultasi Gratis
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                  <i class="bi bi-telephone-fill"></i>
+                  Hubungi (0322) 321-888
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="250">
+
+            <div class="cta-visual">
+              <div class="main-image">
+                <img src="assets/img/real-estate/rumah5.webp" alt="Investasi Properti" class="img-fluid">
+                <div class="overlay-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>Dipercaya oleh 500+ Klien</span>
+                </div>
+              </div>
+
+              <div class="floating-stats">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="stat-icon">
+                    <i class="bi bi-house-heart-fill"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">850+</span>
+                    <span class="stat-label">Properti Terjual</span>
+                  </div>
+                </div>
+
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="stat-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">InfoPropertiLamongan</span>
+            </a>
+            <p class="mb-4">InfoPropertiLamongan adalah platform properti terpercaya di Indonesia yang menghubungkan penjual,
+              pembeli, dan penyewa properti dengan agen-agen profesional berpengalaman.</p>
+
+                        <div class="newsletter-form">
+              <h5>Tetap Terkini</h5>
+              <form id="footerWaForm">
+                <div class="input-group">
+                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="">
+                  <button type="submit" class="btn-subscribe">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Perusahaan</h4>
+            <ul>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> Tentang</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> Karier</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> Pers</a></li>
+              <li><a href="blog.html"><i class="bi bi-chevron-right"></i> Blog</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Layanan Kami</h4>
+            <ul>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Jual Beli Properti</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Sewa Properti</a></li>
+              <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Konsultasi Investasi</a></li>
+              <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Penilaian Properti</a></li>
+              <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Manajemen Properti</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-info">
+                <p>Jl. Lamongan Raya No. 86<br>Lamongan, Jawa Timur 62211<br>Indonesia</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info">
+                <p>+62 322 321-888</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <p>kontak@InfoPropertiLamongan.co.id</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener"><i
+                  class="bi bi-twitter-x"></i></a>
+              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener"><i
+                  class="bi bi-linkedin"></i></a>
+              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener"><i
+                  class="bi bi-youtube"></i></a>
+              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>@ <span>Hak Cipta</span> <strong class="px-1 sitename">InfoPropertiLamongan</strong> <span>Seluruh Hak Cipta
+                  Dilindungi Undang-Undang</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="privacy.html">Kebijakan Privasi</a>
+              <a href="terms.html">Ketentuan Layanan</a>
+              <a href="privacy.html#cookies">Kebijakan Cookie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+

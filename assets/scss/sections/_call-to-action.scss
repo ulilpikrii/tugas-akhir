@@ -1,0 +1,288 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+.call-to-action {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+
+  .section-badge {
+    display: inline-block;
+    background: color-mix(in srgb, var(--accent-color), transparent 85%);
+    color: var(--accent-color);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .cta-content {
+    h2 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 992px) {
+        font-size: 2.25rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.875rem;
+        text-align: center;
+      }
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      margin-bottom: 2rem;
+
+      @media (max-width: 768px) {
+        text-align: center;
+        font-size: 1.05rem;
+      }
+    }
+  }
+
+  .benefits-list {
+    margin-bottom: 2.5rem;
+
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+
+      @media (max-width: 768px) {
+        justify-content: flex-start;
+      }
+
+      i {
+        color: var(--accent-color);
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      span {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--default-color);
+      }
+    }
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transform: translateX(-100%);
+        transition: transform 0.6s;
+      }
+
+      &:hover::before {
+        transform: translateX(100%);
+      }
+
+      &.btn-primary {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        border-color: var(--accent-color);
+
+        &:hover {
+          background-color: color-mix(in srgb, var(--accent-color), black 15%);
+          transform: translateY(-3px);
+          box-shadow: 0 10px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
+        }
+      }
+
+      &.btn-secondary {
+        background-color: var(--surface-color);
+        color: var(--accent-color);
+        border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+
+        &:hover {
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          border-color: var(--accent-color);
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 75%);
+        }
+      }
+
+      @media (max-width: 576px) {
+        width: 100%;
+        justify-content: center;
+        max-width: 280px;
+      }
+    }
+  }
+
+  .cta-visual {
+    position: relative;
+
+    @media (max-width: 992px) {
+      margin-bottom: 3rem;
+    }
+
+    .main-image {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+
+      img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+
+        @media (max-width: 768px) {
+          height: 300px;
+        }
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+
+      .overlay-badge {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background: var(--surface-color);
+        padding: 12px 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 8px 25px color-mix(in srgb, var(--default-color), transparent 85%);
+
+        i {
+          color: #FFD700;
+          font-size: 1.1rem;
+        }
+
+        span {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: var(--default-color);
+        }
+      }
+    }
+
+    .floating-stats {
+      position: absolute;
+      bottom: -30px;
+      right: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      @media (max-width: 992px) {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .stat-card {
+        background: var(--surface-color);
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 88%);
+        transition: transform 0.3s ease;
+        min-width: 200px;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        .stat-icon {
+          width: 50px;
+          height: 50px;
+          background: color-mix(in srgb, var(--accent-color), transparent 85%);
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+
+          i {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+          }
+        }
+
+        .stat-info {
+          display: flex;
+          flex-direction: column;
+
+          .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            line-height: 1;
+          }
+
+          .stat-label {
+            font-size: 0.85rem;
+            color: color-mix(in srgb, var(--default-color), transparent 40%);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+
+    .cta-content {
+      text-align: center;
+
+      .benefits-list {
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto 2.5rem auto;
+      }
+    }
+  }
+}
