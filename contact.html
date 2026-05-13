@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -35,7 +35,7 @@
         <h1 class="sitename">InfoPropertiLamongan</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Menu utama">
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
@@ -43,7 +43,7 @@
           <li><a href="services.html">Layanan</a></li>
           <li><a href="agents.html">Agen</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Halaman Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#" aria-expanded="false" aria-haspopup="true"><span>Halaman Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown" aria-hidden="true"></i></a>
             <ul>
               <li><a href="property-details.html">Detail Properti</a></li>
               <li><a href="service-details.html">Detail Layanan</a></li>
@@ -55,9 +55,9 @@
             </ul>
           </li>
 
-          <a href="contact.html" class="active">Kontak</a></li>
+          <li><a href="contact.html" class="active">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Buka menu navigasi" type="button"></button>
       </nav>
 
       <a class="btn-getstarted" href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener">Mulai</a>
@@ -135,7 +135,7 @@
       </div>
 
       <div class="map-section" data-aos="fade-up" data-aos-delay="200">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63287.81027839056!2d112.3680553!3d-7.1190504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77fb4a0ec4567f%3A0x9e5ea6a0efcd1b6e!2sLamongan%2C%20Kec.%20Lamongan%2C%20Kabupaten%20Lamongan%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63287.81027839056!2d112.3680553!3d-7.1190504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77fb4a0ec4567f%3A0x9e5ea6a0efcd1b6e!2sLamongan%2C%20Kec.%20Lamongan%2C%20Kabupaten%20Lamongan%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta lokasi kantor InfoPropertiLamongan di Lamongan"></iframe>
       </div>
 
       <div class="container form-container-overlap">
@@ -149,8 +149,8 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <div class="input-with-icon">
-                        <i class="bi bi-person"></i>
-                        <input type="text" class="form-control" name="name" id="contact-name" placeholder="Nama Depan" required="">
+                        <i class="bi bi-person" aria-hidden="true"></i>
+                        <input type="text" class="form-control" name="name" id="contact-name" placeholder="Nama Depan" required="" aria-label="Nama Depan">
                       </div>
                     </div>
                   </div>
@@ -158,8 +158,8 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <div class="input-with-icon">
-                        <i class="bi bi-envelope"></i>
-                        <input type="email" class="form-control" name="email" id="contact-email" placeholder="Alamat Email" required="">
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                        <input type="email" class="form-control" name="email" id="contact-email" placeholder="Alamat Email" required="" aria-label="Alamat Email">
                       </div>
                     </div>
                   </div>
@@ -167,8 +167,8 @@
                   <div class="col-md-12">
                     <div class="form-group">
                       <div class="input-with-icon">
-                        <i class="bi bi-text-left"></i>
-                        <input type="text" class="form-control" name="subject" id="contact-subject" placeholder="Subjek" required="">
+                        <i class="bi bi-text-left" aria-hidden="true"></i>
+                        <input type="text" class="form-control" name="subject" id="contact-subject" placeholder="Subjek" required="" aria-label="Subjek">
                       </div>
                     </div>
                   </div>
@@ -176,8 +176,8 @@
                   <div class="col-12">
                     <div class="form-group">
                       <div class="input-with-icon">
-                        <i class="bi bi-chat-dots message-icon"></i>
-                        <textarea class="form-control" name="message" id="contact-message" placeholder="Tulis Pesan..." style="height: 180px" required=""></textarea>
+                        <i class="bi bi-chat-dots message-icon" aria-hidden="true"></i>
+                        <textarea class="form-control" name="message" id="contact-message" placeholder="Tulis Pesan..." style="height: 180px" required="" aria-label="Pesan"></textarea>
                       </div>
                     </div>
                   </div>
@@ -224,9 +224,9 @@
               <h5>Tetap Terkini</h5>
               <form id="footerWaForm">
                 <div class="input-group">
-                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="">
-                  <button type="submit" class="btn-subscribe">
-                    <i class="bi bi-send"></i>
+                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="" aria-label="Tulis pesan WhatsApp">
+                  <button type="submit" class="btn-subscribe" aria-label="Kirim pesan WhatsApp">
+                    <i class="bi bi-send" aria-hidden="true"></i>
                   </button>
                 </div>
               </form>
@@ -291,11 +291,11 @@
             </div>
 
             <div class="social-links">
-              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
-              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
-              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
-              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener" aria-label="Facebook InfoPropertiLamongan"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener" aria-label="Twitter InfoPropertiLamongan"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener" aria-label="LinkedIn InfoPropertiLamongan"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener" aria-label="YouTube InfoPropertiLamongan"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener" aria-label="Instagram InfoPropertiLamongan"><i class="bi bi-instagram" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -324,8 +324,8 @@
 
   </footer>
 
-  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp"><i class="bi bi-whatsapp"></i></a>
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp" aria-label="Hubungi kami via WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <div id="preloader"></div>
 

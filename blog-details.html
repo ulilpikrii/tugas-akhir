@@ -40,7 +40,7 @@
         <h1 class="sitename">InfoPropertiLamongan</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Menu utama">
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
@@ -48,7 +48,7 @@
           <li><a href="services.html">Layanan</a></li>
           <li><a href="agents.html">Agen</a></li>
           <li><a href="blog.html" class="active">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Halaman Lainnya</span> <i
+          <li class="dropdown"><a href="#" aria-expanded="false" aria-haspopup="true"><span>Halaman Lainnya</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="property-details.html">Detail Properti</a></li>
@@ -61,9 +61,9 @@
             </ul>
           </li>
 
-          <a href="contact.html">Kontak</a></li>
+          <li><a href="contact.html">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Buka menu navigasi" type="button"></button>
       </nav>
 
       <a class="btn-getstarted" href="properties.html">Mulai</a>
@@ -319,9 +319,9 @@
               <h5>Tetap Terkini</h5>
               <form id="footerWaForm">
                 <div class="input-group">
-                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="">
-                  <button type="submit" class="btn-subscribe">
-                    <i class="bi bi-send"></i>
+                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="" aria-label="Tulis pesan WhatsApp">
+                  <button type="submit" class="btn-subscribe" aria-label="Kirim pesan WhatsApp">
+                    <i class="bi bi-send" aria-hidden="true"></i>
                   </button>
                 </div>
               </form>
@@ -386,16 +386,11 @@
             </div>
 
             <div class="social-links">
-              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i
-                  class="bi bi-facebook"></i></a>
-              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener"><i
-                  class="bi bi-twitter-x"></i></a>
-              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener"><i
-                  class="bi bi-linkedin"></i></a>
-              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener"><i
-                  class="bi bi-youtube"></i></a>
-              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i
-                  class="bi bi-instagram"></i></a>
+              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener" aria-label="Facebook InfoPropertiLamongan"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener" aria-label="Twitter InfoPropertiLamongan"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener" aria-label="LinkedIn InfoPropertiLamongan"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener" aria-label="YouTube InfoPropertiLamongan"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener" aria-label="Instagram InfoPropertiLamongan"><i class="bi bi-instagram" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -425,9 +420,8 @@
 
   </footer>
 
-  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp"><i class="bi bi-whatsapp"></i></a>
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp" aria-label="Hubungi kami via WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <div id="preloader"></div>
 

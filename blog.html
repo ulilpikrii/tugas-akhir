@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -43,7 +43,7 @@
         <h1 class="sitename">InfoPropertiLamongan</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Menu utama">
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
@@ -51,7 +51,7 @@
           <li><a href="services.html">Layanan</a></li>
           <li><a href="agents.html">Agen</a></li>
           <li><a href="blog.html" class="active">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Halaman Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#" aria-expanded="false" aria-haspopup="true"><span>Halaman Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown" aria-hidden="true"></i></a>
             <ul>
               <li><a href="property-details.html">Detail Properti</a></li>
               <li><a href="service-details.html">Detail Layanan</a></li>
@@ -63,9 +63,9 @@
             </ul>
           </li>
 
-          <a href="contact.html">Kontak</a></li>
+          <li><a href="contact.html">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Buka menu navigasi" type="button"></button>
       </nav>
 
       <a class="btn-getstarted" href="properties.html">Mulai</a>
@@ -211,7 +211,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/beli-rumah.webp" alt="" class="img-fluid">
+                <img src="assets/img/blog/beli-rumah.webp" alt="Cara Cerdas Membeli Rumah Pertama" class="img-fluid">
               </div>
 
               <p class="post-category">Politik</p>
@@ -221,7 +221,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/person/person-f-12.webp" alt="Foto penulis Dewi Lestari" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Melati Dewi</p>
                   <p class="post-date">
@@ -235,7 +235,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/apartemen-rumah.webp" alt="" class="img-fluid">
+                <img src="assets/img/blog/apartemen-rumah.webp" alt="Perbandingan Apartemen vs Rumah Tapak" class="img-fluid">
               </div>
 
               <p class="post-category">Olahraga</p>
@@ -245,7 +245,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/person/person-f-13.webp" alt="Foto penulis Sari Wulandari" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Anisa Putri</p>
                   <p class="post-date">
@@ -259,7 +259,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/nilai-properti.webp" alt="" class="img-fluid">
+                <img src="assets/img/blog/nilai-properti.webp" alt="Menaikkan Nilai Jual Properti" class="img-fluid">
               </div>
 
               <p class="post-category">Hiburan</p>
@@ -269,7 +269,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/person/person-m-10.webp" alt="Foto penulis Budi Hartono" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Marko Setiawan</p>
                   <p class="post-date">
@@ -283,7 +283,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/harga-properti.webp" alt="" class="img-fluid">
+                <img src="assets/img/blog/harga-properti.webp" alt="Prediksi Harga Properti" class="img-fluid">
               </div>
 
               <p class="post-category">Olahraga</p>
@@ -293,7 +293,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-14.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/person/person-f-14.webp" alt="Foto penulis Rina Kusuma" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Linda Susanti</p>
                   <p class="post-date">
@@ -307,7 +307,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/sertifikat-tanah.webp" alt="" class="img-fluid">
+                <img src="assets/img/blog/sertifikat-tanah.webp" alt="Panduan Sertifikat Tanah" class="img-fluid">
               </div>
 
               <p class="post-category">Politik</p>
@@ -317,7 +317,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-m-11.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/person/person-m-11.webp" alt="Foto penulis Ahmad Faisal" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Deny Pratama</p>
                   <p class="post-date">
@@ -331,7 +331,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/kawasan-tod.webp" alt="" class="img-fluid">
+                <img src="assets/img/blog/kawasan-tod.webp" alt="Investasi Properti di Kawasan TOD" class="img-fluid">
               </div>
 
               <p class="post-category">Hiburan</p>
@@ -341,7 +341,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-15.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/person/person-f-15.webp" alt="Foto penulis Maya Sari" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Mira Lestari</p>
                   <p class="post-date">
@@ -374,9 +374,9 @@
               <h5>Tetap Terkini</h5>
               <form id="footerWaForm">
                 <div class="input-group">
-                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="">
-                  <button type="submit" class="btn-subscribe">
-                    <i class="bi bi-send"></i>
+                  <input type="text" name="chatMessage" class="form-control" placeholder="Tanya via WhatsApp..." required="" aria-label="Tulis pesan WhatsApp">
+                  <button type="submit" class="btn-subscribe" aria-label="Kirim pesan WhatsApp">
+                    <i class="bi bi-send" aria-hidden="true"></i>
                   </button>
                 </div>
               </form>
@@ -441,11 +441,11 @@
             </div>
 
             <div class="social-links">
-              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
-              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
-              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
-              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+              <a href="https://facebook.com/InfoPropertiLamongan.id" target="_blank" rel="noopener" aria-label="Facebook InfoPropertiLamongan"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/InfoPropertiLamongan_id" target="_blank" rel="noopener" aria-label="Twitter InfoPropertiLamongan"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/company/InfoPropertiLamongan-id" target="_blank" rel="noopener" aria-label="LinkedIn InfoPropertiLamongan"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+              <a href="https://youtube.com/@InfoPropertiLamongan_id" target="_blank" rel="noopener" aria-label="YouTube InfoPropertiLamongan"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+              <a href="https://instagram.com/InfoPropertiLamongan.id" target="_blank" rel="noopener" aria-label="Instagram InfoPropertiLamongan"><i class="bi bi-instagram" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -474,8 +474,8 @@
 
   </footer>
 
-  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp"><i class="bi bi-whatsapp"></i></a>
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="https://wa.me/6281234567890?text=Halo%20InfoPropertiLamongan,%20saya%20tertarik%20dan%20ingin%20bertanya%20lebih%20lanjut." target="_blank" rel="noopener" class="whatsapp-float" title="Hubungi Kami via WhatsApp" aria-label="Hubungi kami via WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <div id="preloader"></div>
 
